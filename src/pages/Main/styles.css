@@ -1,0 +1,71 @@
+#main-container {
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#main-container form {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+
+#main-container form img {
+	height: 200px;
+	
+}
+
+#main-container form input {
+	transition: all 500ms ease-in-out;
+	height: 48px;
+	border: 1px solid #DDD;
+	border-radius: 25px;
+	font-size: 16px;
+	padding: 0 20px;
+	margin-top: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #333;
+}
+
+#main-container form button {
+	height: 48px;
+	background: #7159C1;
+	border-radius: 25px;
+	font-size: 16px;
+	padding: 0 20px;
+	margin-top: 20px;
+	color: #FFF;
+	font-weight: bolder;
+	border: 0;
+	cursor: pointer;
+	position: relative;
+	box-shadow: 0 0 5px 0 #7159C1;
+}
+
+#main-container form input:focus, textarea:focus {
+	box-shadow: 0 3px 15px 0 #7159C1;
+	border: 1px solid #7159C1;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#main-container form button::before {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	box-shadow: 0 5px 25px 0 #7159C1;
+	opacity: 0;
+	transition: opacity 500ms;
+	border-radius: 25px;
+}
+
+#main-container form button:hover::before {
+	opacity: 1;
+}
+   
