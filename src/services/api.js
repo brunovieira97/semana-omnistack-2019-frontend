@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-	baseURL: ''
+	baseURL: 'https://bvieira-rocketbox-backend.herokuapp.com'
 });
 
+export default api;
